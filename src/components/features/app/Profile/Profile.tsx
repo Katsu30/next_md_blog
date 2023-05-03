@@ -8,15 +8,16 @@ export const Profile = () => (
       <Image
         className="object-cover w-28 h-28 rounded-full"
         alt="avatar"
-        src="/assets/author.png"
+        src="/assets/profile/profile_svg.svg"
       />
-      <h1 className="text-2xl font-semibold text-primary-1">Next.js</h1>
+      <h1 className="text-2xl font-semibold text-primary-1">Katsu30</h1>
     </div>
 
-    <p className="text-primary-1">
-      Modern JavaScript Framework: hybrid static & server rendering, TypeScript
-      support, smart bundling, route pre-fetching...
-    </p>
+    <div className="vstack items-center gap-2">
+      <p className="text-primary-1">KATSUHIRO SHIRAISHI</p>
+      <p className="text-primary-1">an engineer based in Tokyo</p>
+      <p className="text-primary-1">seeking fun and better life</p>
+    </div>
 
     <div className="flex gap-4">
       {sns.map(({ href, icon, label }) => (
